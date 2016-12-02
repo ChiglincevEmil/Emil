@@ -1,4 +1,3 @@
-__author__ = 'student'
 import turtle
 
 def curve( l , n):
@@ -13,5 +12,9 @@ def curve( l , n):
         curve(x , n-1)
         turtle.left(60)
         curve(x, n-1)
+
+
 turtle.speed('slowest')
-curve(40000, 5)
+for i in range(1,4):
+  curve(400, 1)
+  turtle.right(120)
