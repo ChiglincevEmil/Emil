@@ -6,15 +6,23 @@ def curve( l , n):
     else:
         x= l/4
         curve(x, n-1)
-        turtle.left(60)
+        turtle.left(90)
         curve(x, n-1)
-        turtle.right(120)
+        turtle.right(90)
         curve(x , n-1)
-        turtle.left(60)
+        turtle.right(90)
+        curve(x, n-1)
+        curve(x, n-1)
+        turtle.left(90)
+        curve(x,n-1)
+        turtle.left(90)
+        curve(x, n-1)
+        turtle.right(90)
         curve(x, n-1)
 
 
-turtle.speed('slowest')
-for i in range(1,4):
-  curve(400, 1)
-  turtle.right(120)
+
+
+turtle.speed('fastest')
+curve(400, 3)
+turtle.done()
